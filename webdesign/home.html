@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #232f3e;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: orange;
+        }
+
+        .search-box {
+            width: 40%;
+            padding: 8px;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .products {
+            padding: 20px;
+        }
+
+        .products h2 {
+            margin-bottom: 10px;
+        }
+
+        .product-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+        }
+
+        .product-card {
+            min-width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #131a22;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">amazon<span>.in</span></div>
+        <input type="text" class="search-box" placeholder="Search products">
+        <div class="nav-links">
+            <a href="#">Sign In</a>
+            <a href="#">Returns & Orders</a>
+            <a href="#">Cart 🛒</a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <img src="images/banner.jpg" alt="Main Banner">
+    </section>
+
+    <section class="products">
+        <h2>Best Sellers</h2>
+        <div class="product-container">
+
+
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <p>Wireless Headphones</p>
+                <p class="price">₹999</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <p>Bluetooth Speaker</p>
+                <p class="price">₹1,299</p>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product3.jpg" alt="Product 3">
+                <p>Smart Watch</p>
+                <p class="price">₹1,999</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Amazon Clone | Terms | Privacy | Help</p>
+    </footer>
+
+</body>
+</html>
